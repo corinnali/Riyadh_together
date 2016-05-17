@@ -144,7 +144,7 @@
                     </ul>
                     <br>
 
-                    <img src="img/methods/schematic_1.jpg" width=550 height=300 class=img-div-center><br>
+                    <img src="img/methods/schematic_1.JPG" width=550 height=300 class=img-div-center><br>
 
                     <p>For every trip i in S, we pair it with trip j provided |TO<sub>j</sub> - TO<sub>i</sub>| <= D. We call TO<sub>j</sub> - TO<sub>i</sub> = <i>Delta</i>.<br><br> 
                     We check which dropoff location is geographically closer to Flushing Station. Call this closer drop-off <i>W</i> (for waypoint), and the other destiation <i>Dest</i>.<br><br> 
@@ -152,7 +152,7 @@
                     We calculate T2<sub>i</sub> and T2<sub>j</sub>, the new travel time for each trip in the sharing scenario. For the Trip that started first, we also add Delta to the travel time.<br><br> 
                     If T2<sub>i</sub> - T1<sub>i</sub> <= D AND T2<sub>j</sub> - T1<sub>j</sub> <= D, we note in a dictionary that T<sub>j</sub> and T<sub>i</sub> are shareable.<br><br>
 
-                    <img src="img/methods/schematic_2.jpg" width=550 height=300 class=img-div-center><br>
+                    <img src="img/methods/schematic_2.JPG" width=550 height=300 class=img-div-center><br>
 
                     The result of this exercise is a dictionary, with each trip ID as the key, and all the shareable trips with that particular trip as the value. We represent this as a graph using Python's <a href="https://networkx.github.io/"> Networkx</a> library. In this grpah, each trip is a node; if two trips are shareable, an edge links up these two nodes. The initial shareability network looks like the following:<br>
 
